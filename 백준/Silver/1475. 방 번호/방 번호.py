@@ -1,11 +1,5 @@
-import sys
 import math
-arr = [0] * 9
-num = str(sys.stdin.readline().rstrip())
-for i in num:
-    if i =="9":
-        arr[6] +=1
-    else:
-        arr[int(i)] +=1
-arr[6] = math.ceil(arr[6]/2)
-print(max(arr))
+a=[0]*10
+for i in input():a[int(i)]+=1
+a[6]=math.ceil((a[6]+a[-1])/2)
+print(max(a[:-1]))
